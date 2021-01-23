@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/手写ArrayList.iml" filepath="$PROJECT_DIR$/手写ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../手写HashMap/手写HashMap.iml" filepath="$PROJECT_DIR$/../手写HashMap/手写HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../手写LinkedList/手写LinkedList.iml" filepath="$PROJECT_DIR$/../手写LinkedList/手写LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../高并发操作/高并发操作.iml" filepath="$PROJECT_DIR$/../高并发操作/高并发操作.iml" />
+    </modules>
+  </component>
+</project>

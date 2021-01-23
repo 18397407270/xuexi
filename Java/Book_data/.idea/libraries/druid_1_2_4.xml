@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="druid-1.2.4">
+    <CLASSES>
+      <root url="jar://D:/GitResp/数据库连接池/druid/druid-1.2.4.jar!/" />
+      <root url="jar://D:/GitResp/数据库连接池/druid/druid-wrapper-0.2.9.jar!/" />
+      <root url="jar://D:/GitResp/数据库连接池/druid/mysql-connector-java-5.1.37.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

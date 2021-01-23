@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            text-align: center;
+            margin: 50px;
+        }
+        table{
+            border: 1px solid;
+            margin: auto;/*页面居中对齐*/
+            width: 500px;
+        }
+
+        td,th{
+            text-align: center;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="id" type="text" placeholder="请输入编号">
+        <input id="username" type="text" placeholder="请输入姓名">
+        <input id="sex" type="text" placeholder="请输入性别">
+        <input id="Btn1" type="button" value="提交" >
+    </div>
+
+    <div>
+        <table>
+
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>令狐冲</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)" onclick="del_tr(this)">删除</a></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>任我行</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)"  onclick="del_tr(this)">删除</a></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>岳不群</td>
+                <td>?</td>
+                <td><a href="javascript:void(0)"  onclick="del_tr(this)">删除</a></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var Btn = document.getElementById("Btn1");
+        Btn.onclick = function () {
+            //获取三个属性的值
+            var id = document.getElementById("id").value;
+            var username = document.getElementById("username").value;
+            var sex = document.getElementById("sex").value;
+
+            var table = document.getElementsByTagName("table")[0];
+
+            //使用InnerHtml实现动态表格
+            table.innerHTML += "<tr>\n" +
+                "                <td>"+id+"</td>\n" +
+                "                <td>"+username+"</td>\n" +
+                "                <td>"+sex+"</td>\n" +
+                "                <td><a href=\"javascript:void(0)\" onclick=\"del_tr(this)\">删除</a></td>\n" +
+                "            </tr>" ;
+
+            document.getElementById("id").value="";
+            document.getElementById("username").value="";
+            document.getElementById("sex").value="";
+
+        }
+
+        function del_tr(obj) {
+            var table = obj.parentNode.parentNode.parentNode;
+            var tr = obj.parentNode.parentNode;
+            table.removeChild(tr);
+        }
+
+
+    </script>
+
+</body>
+</html>

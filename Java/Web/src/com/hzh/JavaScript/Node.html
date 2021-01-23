@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    div{
+        border: red solid 1px;
+    }
+
+    #div1{
+        width: 200px;
+        height: 200px;
+    }
+
+    #div2{
+        width: 100px;
+        height: 100px;
+    }
+
+    #div3{
+        width: 100px;
+        height: 100px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <div id="div1">
+        <div id="div2" >div2</div>
+        div1
+    </div>
+    <a id="rem_div" href="javascript:void(0)">点击删除div2</a>
+    <a id="add_div" href="javascript:void(0)">点击添加子节点</a>
+    <script>
+        //实现删除子节点
+
+        var elementById = document.getElementById("rem_div");
+
+        //绑定单击事件
+        elementById.onclick = function () {
+            var elementById1 = document.getElementById("div1");
+            var elementById2 = document.getElementById("div2");
+
+            elementById1.removeChild(elementById2);
+        }
+
+        //实现添加子节点
+
+        var elementById3 = document.getElementById("add_div");
+
+        //绑定单击事件
+        elementById3.onclick = function () {
+            //父节点
+            var div1 = document.getElementById("div1");
+            //创建子节点
+            var htmlDivElement = document.createElement("div");
+            htmlDivElement.setAttribute("id","div3");
+            //将子节点添加到父节点当中
+            div1.appendChild(htmlDivElement);
+        }
+
+        var div2 = document.getElementById("div2");
+        var div1 = div2.parentNode;
+        alert(div1);
+
+    </script>
+</body>
+</html>

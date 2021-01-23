@@ -1,0 +1,6 @@
+#this is a properties file
+#Sat Nov 28 17:12:49 CST 2020
+张四=18
+李四=18
+张三=20
+李五=19

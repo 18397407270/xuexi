@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    * 数据类型
+    * */
+    var a = 123;
+    var a1 = 1.2;
+    var a3 = "语法";
+    var a4 = undefined;
+    var a5 = null;
+    var a6 = NaN;
+    var a7 = false;
+    var a8 = 123;
+    var a9 = 123;
+    var a10 = "123";
+
+    var c = a>a1?1:0;
+    document.write(c+"<br/>");
+
+    var date = new Date();
+    /*
+    * if选择
+    * */
+    if(date){
+        document.write(date+"<br/>");
+    }
+
+    /*
+    * while循环
+    * */
+    var i = 1;
+    var sum=0;
+    while(i<=100){
+        sum+=i;
+        i++;
+    }
+    document.write(sum+"<br />");
+
+
+
+    document.write(a+"---"+typeof(a)+"<br/>");
+    document.write(a1+"---"+typeof(a1)+"<br/>");
+    document.write(a3+"---"+typeof(a3)+"<br/>");
+    document.write(a4+"---"+typeof(a4)+"<br/>");
+    document.write(a5+"---"+typeof(a5)+"<br/>");
+    document.write(a6+"---"+typeof(a6)+"<br/>");
+    document.write(a7+"---"+typeof(a7)+"<br/>");
+    document.write((a8==a9)+"<br/>");/*true*/
+    document.write((a8==a10)+"<br/>");/*true*/
+    document.write((a8===a10)+"<br/>");/*false* 全等于*/
+
+</script>
+
+</body>
+</html>

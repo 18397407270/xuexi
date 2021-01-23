@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            text-align: center;
+            margin: 50px;
+        }
+        table{
+            border: 1px solid;
+            margin: auto;/*页面居中对齐*/
+            width: 500px;
+        }
+
+        td,th{
+            text-align: center;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="id" type="text" placeholder="请输入编号">
+        <input id="username" type="text" placeholder="请输入姓名">
+        <input id="sex" type="text" placeholder="请输入性别">
+        <input id="Btn1" type="button" value="提交" >
+    </div>
+
+    <div>
+        <table>
+
+            <tr>
+                <th>编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+
+
+            <tr>
+                <td>1</td>
+                <td>令狐冲</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)" onclick="del_tr(this)">删除</a></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>任我行</td>
+                <td>男</td>
+                <td><a href="javascript:void(0)"  onclick="del_tr(this)">删除</a></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>岳不群</td>
+                <td>?</td>
+                <td><a href="javascript:void(0)"  onclick="del_tr(this)">删除</a></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var Btn = document.getElementById("Btn1");
+        Btn.onclick = function () {
+            //获取三个属性的值
+            var id = document.getElementById("id").value;
+            var username = document.getElementById("username").value;
+            var sex = document.getElementById("sex").value;
+
+            //将三个属性的值转为文本节点
+            var text1 = document.createTextNode(id);
+            var text2 = document.createTextNode(username);
+            var text3= document.createTextNode(sex);
+
+            //将这些文本节点添加到父节点当中
+            var td1 = document.createElement("td");
+            td1.appendChild(text1);
+            var td2 = document.createElement("td");
+            td2.appendChild(text2);
+            var td3 = document.createElement("td");
+            td3.appendChild(text3);
+            var td4 = document.createElement("td");
+            var a = document.createElement("a");
+            a.setAttribute("href","Javascript:void(0)");
+            a.setAttribute("onclick","del_tr(this)");
+            var text_a = document.createTextNode("删除");
+            a.appendChild(text_a);
+            td4.appendChild(a);
+
+            //将td节点添加到tr节点当中
+            var tr = document.createElement("tr");
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tr.appendChild(td4)
+
+            //将tr节点添加到table当中
+            var table = document.getElementsByTagName("table")[0];
+            table.appendChild(tr);
+
+            document.getElementById("id").value="";
+            document.getElementById("username").value="";
+            document.getElementById("sex").value="";
+
+        }
+
+        function del_tr(obj) {
+            var table = obj.parentNode.parentNode.parentNode;
+            var tr = obj.parentNode.parentNode;
+            table.removeChild(tr);
+        }
+
+
+    </script>
+
+</body>
+</html>

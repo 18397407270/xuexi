@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <!--
+    实现灯泡开关案例
+    -->
+<body>
+    <img id="light" src="img/off.gif" alt="灯泡">
+<script>
+    const elementById = document.getElementById("light");//获取对象
+
+    let flag = false;
+
+    elementById.onclick = function() {
+        if(flag){//灯泡亮的时候
+            elementById.src="img/off.gif";
+            flag = false;
+        }else{//灯泡灭的时候
+            elementById.src="img/on.gif";
+            flag = true;
+        }
+    }
+</script>
+</body>
+</html>

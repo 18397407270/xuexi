@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <!--
+    采用定时器(setInterval)实现轮播图
+    -->
+</head>
+<body>
+    <img id="imageBanner" src="img/banner_1.jpg" width="100%">
+    <input id="history3" type="button" value="后退">
+    <script>
+        var elementById = document.getElementById("imageBanner");
+        
+        function imageBanner1() {
+            elementById.src="img/banner_1.jpg";
+        }
+
+        function imageBanner2() {
+            elementById.src="img/banner_2.jpg";
+        }
+
+        function imageBanner3() {
+            elementById.src="img/banner_3.jpg";
+        }
+        setInterval(imageBanner2,2000);
+        setInterval(imageBanner3,4000);
+        setInterval(imageBanner1,6000);
+
+        var history3 = document.getElementById("history3");
+        history3.onclick = function () {
+            history.back();
+        }
+    </script>
+</body>
+</html>

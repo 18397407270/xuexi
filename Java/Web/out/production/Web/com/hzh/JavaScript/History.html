@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="history1" type="button" value="获取历史记录的数量">
+    <a href="../example/Carousel_figure.html">轮播图效果</a>
+    <input id="history2" type="button" value="前进">
+    <script>
+        var history1 = document.getElementById("history1");
+        history1.onclick = function () {
+            var length = history.length;//访问过的页面的数量
+            alert(length);
+        }
+
+        var history2 = document.getElementById("history2");
+        history2.onclick = function () {
+           history.forward();
+        }
+    </script>
+
+</body>
+</html>

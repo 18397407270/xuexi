@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+
+    window.onload = function () {
+        var In_1 = document.getElementById("In_1");
+/*
+        //onblur一般用于表单校验
+        In_1.onblur  =function () {
+            alert("失去了焦点");
+        }
+
+        In_1.onmouseover = function () {
+            alert("鼠标来了");
+        }
+
+        In_1.onmouseout = function () {
+            alert("鼠标离开了");
+        }
+        In_1.onmousedown = function (event) {
+            //alert("鼠标点击了");
+            //0:鼠标左键,1:鼠标滚轮,2:鼠标右键
+            alert(event.button);
+        }*/
+
+        /*In_1.onkeydown = function (event) {
+            //alert(event.code);
+            //event.keyCode已经被弃用,采取key这种方式
+             if(event.key==="Enter"){
+                 alert("表单已经提交了");
+             }
+        }*/
+
+        In_1.onchange = function () {
+            //内容发生改变,就会提示这段话
+            alert("内容改变了");
+        }
+
+            var Sel = document.getElementById("Sel");
+            Sel.onchange = function () {
+                var value = document.getElementById("Sel").value;
+                alert("你已经把城市更改为"+value+"");
+            }
+
+
+            //表单校验方式一
+           /* document.getElementById("form").onsubmit = function () {
+                return false;
+            }*/
+    }
+
+    function CheckForm() {
+        return false;
+    }
+</script>
+
+<body>
+    <form id="form" onclick="return CheckForm();">
+        <input id="In_1" type="text">
+
+        <select id="Sel">
+            <option>请选择</option>
+            <option class="Hn">湖南</option>
+            <option id="Sh">上海</option>
+            <option id="Gz">广州</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    window的方法
+    一.与弹出有关的方法
+      1.alert(显示消息与确认按钮的警告框)
+      2.confirm(显示消息与确认按钮与取消按钮的消息框)
+      3.prompt(显示可提示用户输入的对话框)
+    二.与打开和关闭有关的方法
+      1.open
+      2.close:谁调用我关谁
+    三:与定时器有关的方法
+      setTimeout():指定毫秒数后调用方法或者表达式:返回id,唯一标识定时器
+      clearTimeout(id):取消 setTimeout()方法
+      setInterval():指定周期来调用方法:返回id,唯一标识定时器
+      clearInterval(id):取消setInterval()方法
+     四:属性
+     BOM:history,location, Navigator,Screen
+     DOM:document
+
+    -->
+    <script>
+        /*alert("Hello");
+        window.alert("Hello");*/
+
+        /*confirm("你确定要退出吗");*//*确定返回true  取消返回false*/
+
+        /*s = prompt("请输入用户名");
+        alert(s);*/
+        function fun() {
+            alert("你好");
+        }
+        var timeout = setTimeout(fun,2000);
+        clearTimeout(timeout);
+
+        var interval = setInterval(fun,1000);
+        clearInterval(interval);
+
+
+
+    </script>
+</head>
+<body>
+   <!-- <input id="open" type="button" value="打开新窗口">
+    <input id="closeBtn" type="button" value="关闭窗口">
+    <script>
+        var elementById = document.getElementById("open");
+        var closeBtn = document.getElementById("closeBtn");
+        var newWindow;
+        elementById.onclick = function () {
+            newWindow= open("http://www.baidu.com");
+        }
+
+        closeBtn.onclick = function () {
+
+                newWindow.close();
+        }
+    </script>-->
+
+</body>
+</html>

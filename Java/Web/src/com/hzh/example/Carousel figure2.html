@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <!--
+    采用定时器(setInterval)实现轮播图
+    -->
+    <script>
+        ;
+        var num = 1;
+        function fun() {
+            num++;
+            if(num>3){
+                num=1;
+            }
+            //写在这里才能读取到图片id,写在函数外面的话会先执行这句话,导致结果为空
+            var elementById = document.getElementById("imageBanner")
+            elementById.src = "img/banner_"+num+".jpg";
+            alert(elementById.src);
+        }
+        setInterval(fun,2000);
+    </script>
+</head>
+<body>
+    <img id="imageBanner" src="img/banner_1.jpg" width="100%">
+</body>
+</html>

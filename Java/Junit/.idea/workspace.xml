@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d0cc29f-ee18-4ec4-a5f7-7dd9cecc64ff" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lbN2a2YqQsZpu9X4mOQETqTmi4" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="JUnit.CalculationTset.MultTest">
+    <configuration name="CalculationTset" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzh.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hzh.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hzh.test.CalculationTset" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculationTset.AddTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzh.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hzh.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hzh.test.CalculationTset" />
+      <option name="METHOD_NAME" value="AddTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculationTset.DivTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzh.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hzh.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hzh.test.CalculationTset" />
+      <option name="METHOD_NAME" value="DivTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculationTset.MultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hzh.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hzh.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hzh.test.CalculationTset" />
+      <option name="METHOD_NAME" value="MultTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CalculationTset.MultTest" />
+        <item itemvalue="JUnit.CalculationTset.DivTest" />
+        <item itemvalue="JUnit.CalculationTset.AddTest" />
+        <item itemvalue="JUnit.CalculationTset" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d0cc29f-ee18-4ec4-a5f7-7dd9cecc64ff" name="Default Changelist" comment="" />
+      <created>1607861624464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607861624464</updated>
+      <workItem from="1607861625528" duration="213000" />
+      <workItem from="1607861866264" duration="4493000" />
+      <workItem from="1608304516316" duration="1000" />
+      <workItem from="1608974934404" duration="12000" />
+      <workItem from="1610009567329" duration="23000" />
+      <workItem from="1610009645852" duration="2000" />
+      <workItem from="1610029360573" duration="72000" />
+      <workItem from="1610031340143" duration="125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1342" height="201" key="GridCell.Tab.0.bottom" timestamp="1607868293472">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607868293472" />
+    <state width="1342" height="201" key="GridCell.Tab.0.center" timestamp="1607868293472">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607868293472" />
+    <state width="1342" height="201" key="GridCell.Tab.0.left" timestamp="1607868293472">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607868293472" />
+    <state width="1342" height="201" key="GridCell.Tab.0.right" timestamp="1607868293472">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607868293472" />
+    <state x="533" y="377" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1607862116409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="533" y="377" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824@0.0.1536.824" timestamp="1607862116409" />
+  </component>
+</project>
