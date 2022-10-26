@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 81.68.239.244
+    username: hzh
+    password: Hengde123
+    port: 5672
+    publisher-confirm-type: correlated
+    publisher-returns: true
+server:
+  port: 9999
